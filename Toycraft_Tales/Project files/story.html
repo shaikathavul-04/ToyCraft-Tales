@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToyCraft Story</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f5fafd, #ddeaf6);
+      color: #2c3e50;
+    }
+
+    nav {
+      background: linear-gradient(to right, #001f3f, #003366);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    nav h1 img {
+      height: 40px;
+      margin-right: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #fbc531;
+    }
+
+    .section-block {
+      background: #ffffffee;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 92%;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-block h3 {
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .section-block h3 i {
+      margin-right: 12px;
+      color: #0072ff;
+    }
+
+    .section-block p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #34495e;
+      margin-bottom: 25px;
+    }
+
+    .tableauPlaceholder {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .section-block {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1><img src="logo.png" alt="ToyCraft Logo"> ToyCraft Tales</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="section-block">
+    <h3><i class="fas fa-book-open"></i>Discovering the Tale Behind Toy Data</h3>
+    <p>Explore a compelling narrative that uncovers toy market trends, customer preferences, and top-performing regions — all brought to life with interactive Tableau visuals.</p>
+
+    <div class="tableauPlaceholder" id="viz1751034621828" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="ToyCraft Story"
+               src="https://public.tableau.com/static/images/To/ToyCraftTalesstory/Story2/1_rss.png"
+               style="border: none" />
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="ToyCraftTalesstory/Story2" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/To/ToyCraftTalesstory/Story2/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+        <param name="filter" value="publish=yes" />
+      </object>
+    </div>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById('viz1751034621828');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1016px';
+        vizElement.style.height = '991px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '950px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+</body>
+</html>
